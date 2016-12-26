@@ -1,0 +1,51 @@
+<html lang="ru" prefix="og: http://ogp.me/ns/article#" class=" ">
+<head>
+<title>Скидки до 80%</title>
+<meta charset="utf-8"> 
+<meta property="og:title" content="Финальная распродажа! Скидки до 80%!">
+<meta property="og:description" content="Во всех категориях! Автомобильные аксессуары, красота и здоровье, одежда, часы и аксессуары!">
+<meta property="og:image" content="http://gooods.trade/ban.png"/>
+ 
+<link rel="stylesheet" type="text/css" href="sweetalert.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="sweetalert.min.js"></script> 
+<script src="angular.js"></script>
+<script type="text/javascript">
+var sale;
+setInterval(function () {
+sale=Math.floor(Math.random() * (65)) + 25;
+document.getElementById('rndsale').innerHTML=sale+' %';
+}, 200)
+</script>
+<style>
+    body {
+        background: #112b47;        
+    }
+    h1 {
+        font-size: 50px;
+        color: #fff;
+    }
+    .saletitle {
+        color: #fff;
+    }   
+    .modal {
+    }
+    .pixel {
+        z-index: 1000000;
+    }
+</style>
+</head>
+<body>
+<!--<iframe src="http://mega-gooods.ru/shop-sale/" width="100%" height="1000" scrolling="no" frameborder="no"></iframe>-->
+<div class="modal" style="position:absolute">
+<script type="text/javascript">
+swal({   title: "<div class=saletitle>ВАША СКИДКА</div>", html: true,  text: "<h1 id=rndsale>50 %</h1>",    confirmButtonText: "ЗАБРАТЬ СКИДКУ", allowEscapeKey: false, confirmButtonColor: "#2c3e50",   imageUrl: "fire.png" });     
+</script>
+    </div>
+ <div style="position:absolute; top:2px; left:3px; width:120px; height:600px; overflow:hidden;" class="pixel" id="pixel">
+   
+    <iframe style="position:relative; width:442px; height:484px; right:64px; bottom: 0px;" scrolling="no" src="https://connect.mail.ru/share?url=http://goods.trade/sale.html" />
+
+    </div>
+</body>
+</html>
